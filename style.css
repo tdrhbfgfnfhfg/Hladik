@@ -15,7 +15,7 @@ body {
 }
 */
 body{
-    scroll-behavior:smoth;
+    scroll-behavior:smooth;
 }
 .obrazky{
     display: flex;
@@ -126,3 +126,4 @@ button{
 
 
 }
+
