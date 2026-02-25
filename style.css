@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/*
+body {
+    background-image: url("auto_3.png"), url("auto_2.png"), url("auto_1.png");
+    background-position: top center, top center, top center; 
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 100vh, 100% 100vh, 100% 100vh; 
+    background-position: 0 0, 0 100vh, 0 200vh;
+    min-height: 300vh;
+}
+*/
+.obrazky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#jedna{ background-image: url("auto_3.png");    
+    height: 100vh; width: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+} 
+#dva{ 
+    background-image: url("auto_2.png"); 
+    height: 100vh; width: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+} #tri{
+    background-image: url("auto_1.png"); 
+    height: 100vh; width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#odkazy{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+#odkazy::after{
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 2px;
+
+    background: white;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+#odkazy:hover::after{
+    transform: scaleX(1);
+}
+
+
+nav{
+    background: transparent;
+    backdrop-filter: none;
+    transition: 0.4s ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    padding-inline: 75px;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav.scrolled{
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+.logo{
+    width: 75px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 125px;
+    margin: 65vh;
+}
+
+
+button{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    box-shadow: 4px 4px 15px black;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    padding-inline: 40px;
+    padding-block: 10px;
+    transition: 0.3s;
+}
+.button :hover{
+    background-color: rgb(157, 157, 157);
+
+}
