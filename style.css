@@ -14,6 +14,9 @@ body {
     min-height: 300vh;
 }
 */
+body{
+    scroll-behavior:smoth;
+}
 .obrazky{
     display: flex;
     justify-content: center;
@@ -120,5 +123,6 @@ button{
 }
 .button :hover{
     background-color: rgb(157, 157, 157);
+
 
 }
