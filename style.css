@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -26,7 +30,6 @@ body {
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
-       scroll-behavior:smooth;
 } 
 #dva{ 
     background-image: url("auto_2.png"); 
@@ -125,6 +128,7 @@ button{
 
 
 }
+
 
 
 
