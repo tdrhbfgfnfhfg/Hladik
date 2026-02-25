@@ -14,21 +14,19 @@ body {
     min-height: 300vh;
 }
 */
-body{
-    scroll-behavior:smooth;
-}
+
 .obrazky{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    scroll-behavior: smooth;
 }
 #jedna{ background-image: url("auto_3.png");    
     height: 100vh; width: 100%; 
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
+       scroll-behavior:smooth;
 } 
 #dva{ 
     background-image: url("auto_2.png"); 
@@ -127,5 +125,6 @@ button{
 
 
 }
+
 
 
